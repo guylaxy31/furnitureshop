@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../assets/fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../assets/fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../assets/fonts/Gilroy-Regular.ttf");
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.headercontent {
+  min-height: 774px;
+  background-color: #fcf8f3;
+
+  .leftbg {
+    position: absolute;
+    min-width: 964px;
+    min-height: 774px;
+    background-color: #f9f1e7;
+  }
+  .navigation-bar {
+    position: absolute;
+    padding-top: 40px;
+    max-width: 1240px;
+    max-height: 45px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .main-logo {
+      margin-right: 40px;
+      align-self: center;
+    }
+
+    .arrow-icon {
+      margin-right: 40px;
+    }
+
+    .menu-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: #fff;
+      margin-right: 43px;
+      max-height: 24px;
+      align-self: center;
+    }
+
+    .search-bar {
+      min-width: 473px;
+      min-height: 45px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      img {
+        margin-left: 12px;
+        margin-right: 6px;
+      }
+
+      input {
+        padding-left: 6px;
+        padding-right: 6px;
+        min-width: 400px;
+        border: none;
+        height: 45px;
+        font-family: "Gilroy-Regular";
+      }
+    }
+
+    .profile-list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 120px;
+      .profile-icon {
+        margin-right: 32px;
+      }
+      .profile-icon:hover {
+        cursor: pointer;
+      }
+      .profile-images:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  a:not(:last-child) {
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 8px;
+    color: #3a3a3a;
+    font-family: "Gilroy-Medium";
+  }
+  a:last-child {
+    text-decoration: none;
+    font-size: 16px;
+    color: #3a3a3a;
+    font-family: "Gilroy-Medium";
+  }
+
+  img:hover {
+    cursor: pointer;
+  }
+}
