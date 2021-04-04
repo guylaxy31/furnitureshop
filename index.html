@@ -15,6 +15,15 @@
         <div class="leftbg"></div>
         <div class="navigation-bar">
             <img src="./assets/logos/Funiro.svg" class="main-logo" alt="Funiro Logo" width='74px' height="30px" />
+            <div class="drawer-btn" onclick="DrawerClickHandler()"><img src="./assets/icons/menu.svg" alt="menu"
+                    width="24px" height="24px" /></div>
+            <div class="drawer-menu" id="drawer-item">
+                <ul>
+                    <li>Products</li>
+                    <li>Rooms</li>
+                    <li>Inspiration</li>
+                </ul>
+            </div>
             <div class="menu-list">
                 <div class="menu-item"><a href="#">Products</a><img class="arrow-icon"
                         src="./assets/icons/Arrow-down.svg" alt="arrow-menu" /></div>
@@ -36,6 +45,14 @@
         </div>
 
     </div>
+
+    <script>
+        function DrawerClickHandler() {
+            var itemlist = document.getElementById("drawer-item")
+            itemlist.style.display === 'none' ? itemlist.style.display = 'flex' : itemlist.style.display = 'none';
+        }
+    </script>
+
 </body>
 
 </html>

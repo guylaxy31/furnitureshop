@@ -21,14 +21,18 @@ body {
 }
 
 .headercontent {
+  width: 100%;
   min-height: 774px;
   background-color: #fcf8f3;
 }
 
 .headercontent .leftbg {
   position: absolute;
-  min-width: 964px;
-  min-height: 774px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 66.94%;
+  height: 774px;
   background-color: #f9f1e7;
 }
 
@@ -36,7 +40,7 @@ body {
   position: absolute;
   padding-top: 40px;
   max-width: 1240px;
-  max-height: 45px;
+  min-height: 45px;
   margin-left: 100px;
   margin-right: 100px;
   display: -webkit-box;
@@ -73,15 +77,45 @@ body {
       flex-wrap: wrap;
   background-color: #fff;
   margin-right: 43px;
-  max-height: 24px;
+  height: 24px;
   -ms-flex-item-align: center;
       align-self: center;
 }
 
-.headercontent .navigation-bar .search-bar {
-  min-width: 473px;
-  min-height: 45px;
+.headercontent .navigation-bar .drawer-btn {
+  display: none;
+}
+
+.headercontent .navigation-bar .drawer-menu {
+  display: none;
+  margin-top: 16px;
+  width: 100%;
   background-color: #fff;
+}
+
+.headercontent .navigation-bar .drawer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+.headercontent .navigation-bar .drawer-menu ul li {
+  font-family: "Gilroy-Regular";
+  font-size: 1em;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #a7a097;
+}
+
+.headercontent .navigation-bar .drawer-menu ul li:hover {
+  cursor: pointer;
+  background-color: #cfcbc6;
+  color: #fff;
+}
+
+.headercontent .navigation-bar .search-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,6 +126,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 473px;
+  min-height: 45px;
+  background-color: #fff;
 }
 
 .headercontent .navigation-bar .search-bar img {
@@ -100,11 +137,15 @@ body {
 }
 
 .headercontent .navigation-bar .search-bar input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-left: 6px;
   padding-right: 6px;
-  min-width: 400px;
+  width: 85%;
   border: none;
-  height: 45px;
+  border-radius: 0px;
+  height: 40px;
   font-family: "Gilroy-Regular";
 }
 
@@ -121,7 +162,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 120px;
+  padding-left: 120px;
 }
 
 .headercontent .navigation-bar .profile-list .profile-icon {
@@ -151,20 +192,82 @@ body {
 
 .menu-item a:not(:last-child) {
   text-decoration: none;
-  font-size: 16px;
-  margin-right: 8px;
+  font-size: 1rem;
+  margin-right: 0.5rem;
   color: #3a3a3a;
   font-family: "Gilroy-Medium";
 }
 
 .menu-item a:last-child {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   color: #3a3a3a;
   font-family: "Gilroy-Medium";
 }
 
 .menu-item img:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .headercontent {
+    width: 100%;
+  }
+  .headercontent .navigation-bar {
+    margin-left: 40px;
+    margin-right: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .headercontent .navigation-bar .search-bar {
+    margin-top: 16px;
+    width: 70%;
+  }
+  .headercontent .navigation-bar .profile-list {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headercontent .navigation-bar .search-bar {
+    margin-right: 0;
+  }
+  .headercontent .navigation-bar .profile-list {
+    padding-left: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headercontent .navigation-bar .main-logo {
+    margin-right: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .headercontent .navigation-bar .menu-list {
+    display: none;
+  }
+  .headercontent .navigation-bar .drawer-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-left: auto;
+  }
+  .headercontent .navigation-bar .drawer-btn:hover {
+    cursor: pointer;
+  }
+  .headercontent .navigation-bar .search-bar {
+    width: 100%;
+  }
+  .headercontent .navigation-bar .profile-list {
+    width: 100%;
+    padding-left: 0px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 /*# sourceMappingURL=theme.css.map */
