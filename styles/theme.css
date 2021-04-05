@@ -20,13 +20,7 @@ body {
   background-color: #fff;
 }
 
-.headercontent {
-  width: 100%;
-  min-height: 774px;
-  background-color: #fcf8f3;
-}
-
-.headercontent .leftbg {
+.leftbg {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,7 +30,20 @@ body {
   background-color: #f9f1e7;
 }
 
+.headercontent {
+  width: 100%;
+  min-height: 774px;
+  background-color: #fcf8f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .headercontent .navigation-bar {
+  z-index: 2;
   position: absolute;
   padding-top: 40px;
   max-width: 1240px;
@@ -107,6 +114,8 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
   color: #a7a097;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
 }
 
 .headercontent .navigation-bar .drawer-menu ul li:hover {
@@ -177,6 +186,60 @@ body {
   cursor: pointer;
 }
 
+.left-right-btn {
+  z-index: 2;
+  width: 76%;
+  min-height: 48px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 574px;
+}
+
+.left-right-btn img {
+  display: none;
+}
+
+.left-right-btn img:hover {
+  cursor: pointer;
+}
+
+.imageslide {
+  z-index: 1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-x: hidden;
+}
+
+.imageslide img {
+  -webkit-transform: translateX(12%);
+          transform: translateX(12%);
+}
+
 .menu-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,6 +302,19 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .leftbg {
+    width: 0;
+  }
+  .headercontent {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #f9f1e7;
+  }
   .headercontent .navigation-bar .main-logo {
     margin-right: 0;
     -ms-flex-item-align: center;

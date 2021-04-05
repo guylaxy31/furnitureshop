@@ -10,9 +10,8 @@
 </head>
 
 <body>
-
+    <div class="leftbg"></div>
     <div class="headercontent">
-        <div class="leftbg"></div>
         <div class="navigation-bar">
             <img src="./assets/logos/Funiro.svg" class="main-logo" alt="Funiro Logo" width='74px' height="30px" />
             <div class="drawer-btn" onclick="DrawerClickHandler()"><img src="./assets/icons/menu.svg" alt="menu"
@@ -43,14 +42,58 @@
                     height="40px" />
             </div>
         </div>
+        <div class="left-right-btn">
+
+            <img id="left-inactive" src="./assets/icons/left-inactive.svg" alt="left btn" />
+            <img id="left-active" onclick="minusGalleryIndex()" src="./assets/icons/left-active.svg" alt="left btn" />
+            <img id="right-active" onclick="addGalleryIndex()" src="./assets/icons/right-active.svg" alt="right btn" />
+            <img id="right-inactive" src="./assets/icons/right-inactive.svg" alt="right btn" />
+
+        </div>
+        <div class="imageslide">
+            <img src="./assets/images/image-room1.png" alt="room image1" />
+            <img src="./assets/images/image-room2.png" alt="room image2" />
+            <img src="./assets/images/image-room3.png" alt="room image3" />
+        </div>
 
     </div>
-
+    <div>content ต่อไป</div>
+    <div>content ต่อไป</div>
     <script>
+        // ส่วนของ Drawer menu
+        var itemlist = document.getElementById("drawer-item")
         function DrawerClickHandler() {
-            var itemlist = document.getElementById("drawer-item")
-            itemlist.style.display === 'none' ? itemlist.style.display = 'flex' : itemlist.style.display = 'none';
+            console.log('run drawer function')
+            itemlist.style.display === 'none' && screen.width > 600 ? itemlist.style.display = 'flex' : itemlist.style.display = 'none';
         }
+        // ส่วนของ Left Right Gallery
+        var totalIndex = 3
+        var currentIndex = 2
+
+        function addGalleryIndex() {
+            currentIndex < totalIndex ? currentIndex += 1 : null
+            // console.log('In function ', currentIndex)
+            checkGalleryIndex(currentIndex)
+
+        }
+        function minusGalleryIndex() {
+            currentIndex > 1 ? currentIndex -= 1 : null
+            // console.log('In function ', currentIndex)
+            checkGalleryIndex(currentIndex)
+        }
+
+        var leftinactive = document.getElementById("left-inactive")
+        var leftactive = document.getElementById("left-active")
+        var rightactive = document.getElementById("right-active")
+        var rightinactive = document.getElementById("right-inactive")
+
+        function checkGalleryIndex(currentIndex) {
+            currentIndex === 1 ? (leftinactive.style.display = 'flex', leftactive.style.display = 'none', rightactive.style.display = 'flex', rightinactive.style.display = 'none') : null
+            currentIndex > 1 && currentIndex < totalIndex ? (leftinactive.style.display = 'none', leftactive.style.display = 'flex', rightactive.style.display = 'flex', rightinactive.style.display = 'none') : null
+            currentIndex === totalIndex ? (leftinactive.style.display = 'none', leftactive.style.display = 'flex', rightactive.style.display = 'none', rightinactive.style.display = 'flex') : null
+        }
+        checkGalleryIndex(currentIndex)
+
     </script>
 
 </body>
