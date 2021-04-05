@@ -207,10 +207,6 @@ body {
   margin-bottom: 574px;
 }
 
-.left-right-btn img {
-  display: none;
-}
-
 .left-right-btn img:hover {
   cursor: pointer;
 }
@@ -236,6 +232,10 @@ body {
 }
 
 .imageslide img {
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   -webkit-transform: translateX(12%);
           transform: translateX(12%);
 }

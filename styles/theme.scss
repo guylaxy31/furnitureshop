@@ -151,9 +151,7 @@ body {
   justify-content: flex-end;
   gap: 8px;
   margin-bottom: 574px;
-  img {
-    display: none;
-  }
+
   img:hover {
     cursor: pointer;
   }
@@ -168,7 +166,10 @@ body {
   align-items: flex-end;
   justify-content: center;
   overflow-x: hidden;
+
   img {
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
     transform: translateX(12%);
   }
 }
