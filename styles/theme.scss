@@ -148,13 +148,30 @@ body {
   display: flex;
   flex-direction: row;
   align-self: flex-end;
-  justify-content: flex-end;
-  gap: 8px;
+
   margin-bottom: 574px;
 
-  img:hover {
+  .left-right-arrow {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .left-right-arrow > img:hover {
     cursor: pointer;
   }
+}
+
+.status-gallery-view {
+  display: flex;
+  position: absolute;
+  gap: 16px;
+  width: 100%;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
 }
 
 .imageslide {
@@ -168,7 +185,7 @@ body {
   overflow-x: hidden;
 
   img {
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
     transform: translateX(12%);
   }
