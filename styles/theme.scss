@@ -138,6 +138,93 @@ body {
       }
     }
   }
+
+  .hero-content {
+    display: flex;
+    width: 494px;
+    height: 553px;
+    z-index: 2;
+    position: absolute;
+    align-self: flex-end;
+    justify-content: flex-start;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(31px);
+    opacity: 0.72;
+    left: 100px;
+    margin-bottom: 80px;
+
+    .bold-hero-text {
+      position: absolute;
+      margin: 60px 60px 292px 60px;
+    }
+
+    .bold-hero-text > p {
+      font-family: "Gilroy-Bold";
+      font-size: 56px;
+      margin: 0;
+      line-height: 67.2px;
+    }
+
+    .medium-hero-desc {
+      position: absolute;
+      flex-wrap: wrap;
+      margin: 277px 77px 186px 60px;
+    }
+    .medium-hero-desc > p {
+      font-family: "Gilroy-Medium";
+      font-size: 20px;
+      margin: 0;
+      line-height: 30px;
+    }
+    .shop-now-btn {
+      position: absolute;
+      display: flex;
+      width: 374px;
+      height: 78px;
+      background: #e89f71;
+      align-items: center;
+      justify-content: center;
+      margin: 415px 60px 60px 60px;
+    }
+
+    .shop-now-btn:hover {
+      cursor: pointer;
+    }
+
+    .shop-now-btn > p {
+      color: #fff;
+      font-family: "Gilroy-Regular";
+      font-size: 20px;
+      margin: 0;
+    }
+  }
+
+  .info-box {
+    z-index: 2;
+    position: absolute;
+    width: 294px;
+    height: 148px;
+    background-color: rgba(255, 255, 255, 0.72);
+    left: 1086px;
+    top: 586px;
+    .info-p1 {
+      margin: 62px 105px 62px 24px;
+    }
+    .info-p2 {
+      margin: 94px 141px 24px 24px;
+      font-size: 20px;
+    }
+  }
+  .info-box > h4 {
+    position: absolute;
+    font-family: "Gilroy-Regular";
+    font-size: 28px;
+    margin: 24px 161px 90px 24px;
+  }
+  .info-box > p {
+    position: absolute;
+    font-family: "Gilroy-Regular";
+  }
 }
 
 .left-right-btn {

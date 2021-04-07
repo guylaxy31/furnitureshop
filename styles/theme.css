@@ -186,6 +186,112 @@ body {
   cursor: pointer;
 }
 
+.headercontent .hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 494px;
+  height: 553px;
+  z-index: 2;
+  position: absolute;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: rgba(255, 255, 255, 0.72);
+  -webkit-backdrop-filter: blur(31px);
+          backdrop-filter: blur(31px);
+  opacity: 0.72;
+  left: 100px;
+  margin-bottom: 80px;
+}
+
+.headercontent .hero-content .bold-hero-text {
+  position: absolute;
+  margin: 60px 60px 292px 60px;
+}
+
+.headercontent .hero-content .bold-hero-text > p {
+  font-family: "Gilroy-Bold";
+  font-size: 56px;
+  margin: 0;
+  line-height: 67.2px;
+}
+
+.headercontent .hero-content .medium-hero-desc {
+  position: absolute;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 277px 77px 186px 60px;
+}
+
+.headercontent .hero-content .medium-hero-desc > p {
+  font-family: "Gilroy-Medium";
+  font-size: 20px;
+  margin: 0;
+  line-height: 30px;
+}
+
+.headercontent .hero-content .shop-now-btn {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 374px;
+  height: 78px;
+  background: #e89f71;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 415px 60px 60px 60px;
+}
+
+.headercontent .hero-content .shop-now-btn:hover {
+  cursor: pointer;
+}
+
+.headercontent .hero-content .shop-now-btn > p {
+  color: #fff;
+  font-family: "Gilroy-Regular";
+  font-size: 20px;
+  margin: 0;
+}
+
+.headercontent .info-box {
+  z-index: 2;
+  position: absolute;
+  width: 294px;
+  height: 148px;
+  background-color: rgba(255, 255, 255, 0.72);
+  left: 1086px;
+  top: 586px;
+}
+
+.headercontent .info-box .info-p1 {
+  margin: 62px 105px 62px 24px;
+}
+
+.headercontent .info-box .info-p2 {
+  margin: 94px 141px 24px 24px;
+  font-size: 20px;
+}
+
+.headercontent .info-box > h4 {
+  position: absolute;
+  font-family: "Gilroy-Regular";
+  font-size: 28px;
+  margin: 24px 161px 90px 24px;
+}
+
+.headercontent .info-box > p {
+  position: absolute;
+  font-family: "Gilroy-Regular";
+}
+
 .left-right-btn {
   z-index: 2;
   width: 76%;
