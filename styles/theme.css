@@ -485,6 +485,62 @@ body {
   cursor: pointer;
 }
 
+.feature-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 92px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 88px;
+  margin-bottom: 88px;
+}
+
+.feature-container .feature-item {
+  width: 280px;
+  height: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature-container .feature-item img {
+  margin-right: 24px;
+  margin-left: 22px;
+}
+
+.feature-container .feature-item .feature-title .title-semibold {
+  font-size: 20px;
+  font-family: "Gilroy-Medium";
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.feature-container .feature-item .feature-title .title-medium {
+  font-size: 16px;
+  font-family: "Gilroy-Medium";
+  margin: 0;
+  color: #898989;
+}
+
 @media screen and (max-width: 992px) {
   .headercontent {
     width: 100%;
