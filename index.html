@@ -90,8 +90,22 @@
             <p class="info-p2">Rp 17.000.000</p>
         </div>
     </div>
-    <div>content ต่อไป</div>
-    <div>content ต่อไป</div>
+    <div class="hero-content-resp">
+        <div class="bold-hero-text-resp">
+            <p>high-Quality</p>
+            <p>Furniture Just</p>
+            <p>For You</p>
+        </div>
+        <div class="medium-hero-desc-resp">
+            <p>Our furniture is made from selected and best quality materials that are suitable for your dream home
+            </p>
+        </div>
+        <div class="shop-now-btn-resp">
+            <p>Shop Now</p>
+        </div>
+    </div>
+
+
     <script>
         // ส่วนของ Drawer menu
         var itemlist = document.getElementById("drawer-item")
@@ -125,9 +139,9 @@
         var gallery3 = document.getElementById("room-image-item3")
 
         function checkGalleryIndex(currentIndex) {
-            currentIndex === 1 ? (leftinactive.style.display = 'flex', leftactive.style.display = 'none', rightactive.style.display = 'flex', rightinactive.style.display = 'none', gallery1.style.transform = 'translateX(115%)', gallery2.style.transform = 'translateX(115%)', gallery3.style.transform = 'translateX(115%)') : null
-            currentIndex > 1 && currentIndex < totalIndex ? (leftinactive.style.display = 'none', leftactive.style.display = 'flex', rightactive.style.display = 'flex', rightinactive.style.display = 'none', gallery1.style.transform = 'translateX(12%)', gallery2.style.transform = 'translateX(12%)', gallery3.style.transform = 'translateX(12%)') : null
-            currentIndex === totalIndex ? (leftinactive.style.display = 'none', leftactive.style.display = 'flex', rightactive.style.display = 'none', rightinactive.style.display = 'flex', gallery1.style.transform = 'translateX(-80%)', gallery2.style.transform = 'translateX(-80%)', gallery3.style.transform = 'translateX(-80%)') : null
+            currentIndex === 1 ? (screen.width > 600 ? (leftinactive.style.display = 'flex', leftactive.style.display = 'none', rightactive.style.display = 'flex', rightinactive.style.display = 'none', gallery1.style.transform = 'translateX(115%)', gallery2.style.transform = 'translateX(115%)', gallery3.style.transform = 'translateX(115%)') : (leftinactive.style.display = 'flex', leftactive.style.display = 'none', rightactive.style.display = 'flex', rightinactive.style.display = 'none', gallery1.style.transform = 'translateX(100%)', gallery2.style.transform = 'translateX(100%)', gallery3.style.transform = 'translateX(100%)')) : null
+            currentIndex > 1 && currentIndex < totalIndex ? (screen.width > 600 ? (leftinactive.style.display = 'none', leftactive.style.display = 'flex', rightactive.style.display = 'flex', rightinactive.style.display = 'none', gallery1.style.transform = 'translateX(12%)', gallery2.style.transform = 'translateX(12%)', gallery3.style.transform = 'translateX(12%)') : (leftinactive.style.display = 'none', leftactive.style.display = 'flex', rightactive.style.display = 'flex', rightinactive.style.display = 'none', gallery1.style.transform = 'translateX(0%)', gallery2.style.transform = 'translateX(0%)', gallery3.style.transform = 'translateX(0%)')) : null
+            currentIndex === totalIndex ? (screen.width > 600 ? (leftinactive.style.display = 'none', leftactive.style.display = 'flex', rightactive.style.display = 'none', rightinactive.style.display = 'flex', gallery1.style.transform = 'translateX(-80%)', gallery2.style.transform = 'translateX(-80%)', gallery3.style.transform = 'translateX(-80%)') : (leftinactive.style.display = 'none', leftactive.style.display = 'flex', rightactive.style.display = 'none', rightinactive.style.display = 'flex', gallery1.style.transform = 'translateX(-100%)', gallery2.style.transform = 'translateX(-100%)', gallery3.style.transform = 'translateX(-100%)')) : null
         }
 
         var activestatus1 = document.getElementById("gallery-active1")
