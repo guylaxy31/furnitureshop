@@ -651,6 +651,42 @@ body {
   }
 }
 
+.share-title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    font-family: "Gilroy-Regular";
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #616161;
+  }
+  h2 {
+    z-index: 1;
+    margin: 0;
+    font-family: "Gilroy-Bold";
+    font-size: 40px;
+    color: #3a3a3a;
+  }
+  h2:hover {
+    cursor: pointer;
+  }
+}
+.share-container {
+  margin-top: -25px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 87px;
+  img {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 992px) {
   .headercontent {
     width: 100%;

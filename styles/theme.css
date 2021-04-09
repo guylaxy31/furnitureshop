@@ -893,6 +893,60 @@ body {
   display: flex;
 }
 
+.share-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.share-title p {
+  font-family: "Gilroy-Regular";
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #616161;
+}
+
+.share-title h2 {
+  z-index: 1;
+  margin: 0;
+  font-family: "Gilroy-Bold";
+  font-size: 40px;
+  color: #3a3a3a;
+}
+
+.share-title h2:hover {
+  cursor: pointer;
+}
+
+.share-container {
+  margin-top: -25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 87px;
+}
+
+.share-container img {
+  width: 100%;
+}
+
 @media screen and (max-width: 992px) {
   .headercontent {
     width: 100%;
