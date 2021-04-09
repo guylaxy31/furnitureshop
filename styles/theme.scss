@@ -422,6 +422,7 @@ body {
       margin-left: 213px;
       margin-top: 24px;
       p {
+        margin-top: 12px;
         font-family: "Gilroy-Medium";
         color: #fff;
         text-align: center;
@@ -438,6 +439,7 @@ body {
       margin-left: 213px;
       margin-top: 24px;
       p {
+        margin-top: 12px;
         font-family: "Gilroy-Medium";
         color: #fff;
         text-align: center;
@@ -518,7 +520,7 @@ body {
           height: fit-content;
           display: flex;
           margin-top: 24px;
-
+          align-items: center;
           justify-content: space-between;
           div {
             display: flex;
@@ -578,6 +580,74 @@ body {
   }
   .show-more-btn:hover {
     cursor: pointer;
+  }
+}
+
+.tip-tricks-title {
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+  h2 {
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 32px;
+    font-family: "Gilroy-Bold";
+  }
+}
+
+.tips-tricks {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 96px;
+  .tip-item {
+    width: 391px;
+    height: 370px;
+
+    .hover-bg {
+      display: none;
+      z-index: -1;
+      position: absolute;
+      background: rgba(97, 97, 97, 0.1);
+      filter: blur(40px);
+      min-width: 391px;
+      min-height: 370px;
+    }
+
+    img {
+      margin: 0;
+      margin-bottom: 16px;
+    }
+    h5 {
+      margin: 0;
+      flex-wrap: wrap;
+      font-size: 24px;
+      color: #3a3a3a;
+      font-family: "Gilroy-Regular";
+      margin-left: 16px;
+      margin-right: 16px;
+      margin-bottom: 8px;
+    }
+    p {
+      margin: 0;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: #898989;
+      font-family: "Gilroy-Regular";
+      margin-left: 16px;
+      margin-right: 16px;
+      margin-bottom: 16px;
+    }
+  }
+  .tip-item:hover {
+    cursor: pointer;
+    background-color: #fff;
+    .hover-bg {
+      display: flex;
+    }
   }
 }
 
