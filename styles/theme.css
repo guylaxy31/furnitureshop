@@ -1395,21 +1395,41 @@ body {
     display: flex;
   }
   .tip-tricks-title h2 {
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
     font-size: 24px;
   }
   .tips-tricks .tip-item img {
     width: 100%;
   }
   .tips-tricks .tip-item h5 {
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
     font-size: 16px;
   }
   .tips-tricks .tip-item p {
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
     font-size: 12px;
   }
   .share-title p {
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
     font-size: 16px;
   }
   .share-title h2 {
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
     font-size: 24px;
   }
   .share-container {

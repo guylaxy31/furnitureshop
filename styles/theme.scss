@@ -1065,6 +1065,8 @@ body {
 
   .tip-tricks-title {
     h2 {
+      transition-timing-function: ease-out;
+      transition-duration: 0.3s;
       font-size: 24px;
     }
   }
@@ -1074,18 +1076,26 @@ body {
         width: 100%;
       }
       h5 {
+        transition-timing-function: ease-out;
+        transition-duration: 0.2s;
         font-size: 16px;
       }
       p {
+        transition-timing-function: ease-out;
+        transition-duration: 0.2s;
         font-size: 12px;
       }
     }
   }
   .share-title {
     p {
+      transition-timing-function: ease-out;
+      transition-duration: 0.2s;
       font-size: 16px;
     }
     h2 {
+      transition-timing-function: ease-out;
+      transition-duration: 0.2s;
       font-size: 24px;
     }
   }
