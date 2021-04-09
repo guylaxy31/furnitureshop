@@ -1097,5 +1097,41 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+  .tip-tricks-title h2 {
+    font-size: 24px;
+  }
+  .tips-tricks .tip-item img {
+    width: 100%;
+  }
+  .tips-tricks .tip-item h5 {
+    font-size: 16px;
+  }
+  .tips-tricks .tip-item p {
+    font-size: 12px;
+  }
+  .share-title p {
+    font-size: 16px;
+  }
+  .share-title h2 {
+    font-size: 24px;
+  }
+  .share-container {
+    margin-top: 0px;
+  }
+  .our-products .product-list .product-item img {
+    width: 100%;
+  }
+  .our-products .product-list .product-item h5 {
+    font-size: 18px;
+  }
+  .our-products .product-list .product-item .item-desc {
+    font-size: 12px;
+  }
+  .our-products .product-list .product-item .product-text-inline .base-price {
+    font-size: 16px;
+  }
+  .our-products .product-list .product-item .product-text-inline .sale-price {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=theme.css.map */
