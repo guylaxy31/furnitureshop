@@ -541,6 +541,232 @@ body {
   color: #898989;
 }
 
+.our-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.our-products h2 {
+  font-family: "Gilroy-Bold";
+  margin: 0;
+}
+
+.our-products .product-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  gap: 32px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 32px;
+}
+
+.our-products .product-list .discount-price {
+  background-color: #e97171;
+  font-size: 16px;
+  position: absolute;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-right: 24px;
+  margin-left: 213px;
+  margin-top: 24px;
+}
+
+.our-products .product-list .discount-price p {
+  font-family: "Gilroy-Medium";
+  color: #fff;
+  text-align: center;
+}
+
+.our-products .product-list .new-product {
+  background-color: #2ec1ac;
+  font-size: 16px;
+  position: absolute;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-right: 24px;
+  margin-left: 213px;
+  margin-top: 24px;
+}
+
+.our-products .product-list .new-product p {
+  font-family: "Gilroy-Medium";
+  color: #fff;
+  text-align: center;
+}
+
+.our-products .product-list .product-item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.our-products .product-list .product-item h5 {
+  font-size: 24px;
+  font-family: "Gilroy-Medium";
+  color: #3a3a3a;
+  margin: 16px;
+  margin-bottom: 8px;
+}
+
+.our-products .product-list .product-item .item-desc {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 16px;
+  font-family: "Gilroy-Medium";
+  color: #898989;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+}
+
+.our-products .product-list .product-item .product-text-inline {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 34px;
+}
+
+.our-products .product-list .product-item .product-text-inline .base-price {
+  font-size: 20px;
+  margin-left: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Gilroy-Bold";
+}
+
+.our-products .product-list .product-item .product-text-inline .sale-price {
+  font-size: 16px;
+  color: #b0b0b0;
+  text-decoration: line-through;
+  margin-left: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Gilroy-Regular";
+}
+
+.our-products .product-list .grey-filter-hover {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-products .product-list .product-item:hover .grey-filter-hover {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 285px;
+  height: 446px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #3a3a3aab;
+  position: absolute;
+}
+
+.our-products .product-list .product-item:hover .grey-filter-hover .add-container {
+  cursor: pointer;
+  width: 202px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.our-products .product-list .product-item:hover .grey-filter-hover .add-container p {
+  font-family: "Gilroy-Medium";
+  text-align: center;
+  color: #e89f71;
+}
+
+.our-products .product-list .product-item:hover .grey-filter-hover .share-like-container {
+  width: 202px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.our-products .product-list .product-item:hover .grey-filter-hover .share-like-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.our-products .product-list .product-item:hover .grey-filter-hover .share-like-container img {
+  margin-right: 8px;
+}
+
+.our-products .product-list .product-item:hover .grey-filter-hover .share-like-container img:hover {
+  cursor: pointer;
+}
+
+.our-products .product-list .product-item:hover .grey-filter-hover .share-like-container p {
+  margin: 0;
+  font-family: "Gilroy-Medium";
+  font-weight: 600;
+  color: #fff;
+}
+
+.our-products .product-list .product-item:hover .grey-filter-hover .share-like-container p:hover {
+  cursor: pointer;
+}
+
+.our-products .product-list .product-text-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.our-products .product-list > div {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 285px;
+  min-height: 446px;
+  background-color: #f4f5f7;
+}
+
 @media screen and (max-width: 992px) {
   .headercontent {
     width: 100%;
