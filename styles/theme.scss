@@ -596,6 +596,79 @@ body {
   }
 }
 
+.inspi-content {
+  display: flex;
+  width: 100%;
+  background-color: #fcf8f3;
+  min-height: 670px;
+  margin-bottom: 44px;
+  flex-direction: row;
+  .inspi-explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 62px;
+    justify-content: center;
+    width: 378px;
+    flex-wrap: wrap;
+
+    h2 {
+      font-family: "Gilroy-Bold";
+      font-size: 40px;
+      margin: 0;
+      text-align: left;
+    }
+    p {
+      font-family: "Gilroy-Medium";
+      font-weight: 400;
+      margin: 0;
+      text-align: left;
+    }
+    .more-btn {
+      margin-top: 24px;
+      background-color: #e89f71;
+      align-self: flex-start;
+      padding: 12px 40px 12px 40px;
+      p {
+        font-family: "Gilroy-Regular";
+        font-weight: 600;
+        color: #fff;
+        margin: 0;
+      }
+    }
+    .more-btn:hover {
+      cursor: pointer;
+    }
+    .inspi-list-reps {
+      display: none;
+    }
+  }
+  .inspi-list {
+    left: 37.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 44px;
+    overflow-x: hidden;
+    img {
+      margin-right: 24px;
+    }
+    #inspi-item1 {
+      width: 404px;
+      height: 582px;
+    }
+    #inspi-item2 {
+      width: 372px;
+      height: 486px;
+    }
+    #inspi-item3 {
+      width: 372px;
+      height: 486px;
+    }
+  }
+}
+
 .tips-tricks {
   width: 100%;
   display: flex;
@@ -780,38 +853,14 @@ body {
       margin-left: 40px;
       margin-right: 40px;
       justify-content: center;
-      .main-logo {
-      }
-
-      .arrow-icon {
-      }
-
-      .menu-list {
-      }
-      .drawer-menu {
-      }
-      .drawer-btn {
-      }
 
       .search-bar {
         margin-top: 16px;
         width: 70%;
-        img {
-        }
-
-        input {
-        }
       }
 
       .profile-list {
         margin-top: 16px;
-
-        .profile-icon {
-        }
-        .profile-icon:hover {
-        }
-        .profile-images:hover {
-        }
       }
     }
 
@@ -875,63 +924,74 @@ body {
       }
     }
   }
-
-  .menu-item {
-    a:not(:last-child) {
-    }
-    a:last-child {
-    }
-
-    img:hover {
-    }
-  }
 }
 
 @media screen and (max-width: 768px) {
   .headercontent {
     .navigation-bar {
-      .main-logo {
-      }
-
-      .arrow-icon {
-      }
-
-      .menu-list {
-      }
-      .drawer-menu {
-      }
-      .drawer-btn {
-      }
-
       .search-bar {
         margin-right: 0;
-        img {
-        }
-
-        input {
-        }
       }
 
       .profile-list {
         padding-left: 16px;
-
-        .profile-icon {
-        }
-        .profile-icon:hover {
-        }
-        .profile-images:hover {
-        }
       }
     }
   }
-
-  .menu-item {
-    a:not(:last-child) {
+  .inspi-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 56px;
+    .inspi-list {
+      display: none;
     }
-    a:last-child {
-    }
 
-    img:hover {
+    .inspi-explore {
+      margin: 0;
+      width: auto;
+      padding-left: 16px;
+      margin-right: 16px;
+
+      h2 {
+        transition-timing-function: ease-out;
+        transition-duration: 0.2s;
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+      p {
+        transition-timing-function: ease-out;
+        transition-duration: 0.2s;
+        font-size: 14px;
+      }
+      .more-btn {
+        align-self: center;
+        transition-timing-function: ease-out;
+        transition-duration: 0.2s;
+        padding: 8px 24px 8px 24px;
+      }
+      .inspi-list-reps {
+        margin-top: 32px;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+        #inspi-item1-resp {
+          width: 144px;
+          height: 208px;
+        }
+        #inspi-item2-resp {
+          width: 112px;
+          height: 188px;
+        }
+        #inspi-item3-resp {
+          width: 144px;
+          height: 208px;
+        }
+      }
     }
   }
 }
@@ -953,9 +1013,6 @@ body {
         align-self: center;
       }
 
-      .arrow-icon {
-      }
-
       .menu-list {
         display: none;
       }
@@ -967,27 +1024,15 @@ body {
       .drawer-btn:hover {
         cursor: pointer;
       }
-      .drawer-menu {
-      }
+
       .search-bar {
         width: 100%;
-        img {
-        }
-
-        input {
-        }
       }
 
       .profile-list {
         width: 100%;
         padding-left: 0px;
         justify-content: flex-end;
-        .profile-icon {
-        }
-        .profile-icon:hover {
-        }
-        .profile-images:hover {
-        }
       }
     }
     .imageslide {

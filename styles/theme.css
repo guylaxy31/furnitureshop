@@ -823,6 +823,113 @@ body {
   font-family: "Gilroy-Bold";
 }
 
+.inspi-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #fcf8f3;
+  min-height: 670px;
+  margin-bottom: 44px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.inspi-content .inspi-explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 100px;
+  margin-right: 62px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 378px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.inspi-content .inspi-explore h2 {
+  font-family: "Gilroy-Bold";
+  font-size: 40px;
+  margin: 0;
+  text-align: left;
+}
+
+.inspi-content .inspi-explore p {
+  font-family: "Gilroy-Medium";
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+}
+
+.inspi-content .inspi-explore .more-btn {
+  margin-top: 24px;
+  background-color: #e89f71;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 12px 40px 12px 40px;
+}
+
+.inspi-content .inspi-explore .more-btn p {
+  font-family: "Gilroy-Regular";
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.inspi-content .inspi-explore .more-btn:hover {
+  cursor: pointer;
+}
+
+.inspi-content .inspi-explore .inspi-list-reps {
+  display: none;
+}
+
+.inspi-content .inspi-list {
+  left: 37.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 44px;
+  overflow-x: hidden;
+}
+
+.inspi-content .inspi-list img {
+  margin-right: 24px;
+}
+
+.inspi-content .inspi-list #inspi-item1 {
+  width: 404px;
+  height: 582px;
+}
+
+.inspi-content .inspi-list #inspi-item2 {
+  width: 372px;
+  height: 486px;
+}
+
+.inspi-content .inspi-list #inspi-item3 {
+  width: 372px;
+  height: 486px;
+}
+
 .tips-tricks {
   width: 100%;
   display: -webkit-box;
@@ -1139,6 +1246,80 @@ body {
   }
   .headercontent .navigation-bar .profile-list {
     padding-left: 16px;
+  }
+  .inspi-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+  .inspi-content .inspi-list {
+    display: none;
+  }
+  .inspi-content .inspi-explore {
+    margin: 0;
+    width: auto;
+    padding-left: 16px;
+    margin-right: 16px;
+  }
+  .inspi-content .inspi-explore h2 {
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .inspi-content .inspi-explore p {
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    font-size: 14px;
+  }
+  .inspi-content .inspi-explore .more-btn {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    padding: 8px 24px 8px 24px;
+  }
+  .inspi-content .inspi-explore .inspi-list-reps {
+    margin-top: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .inspi-content .inspi-explore .inspi-list-reps #inspi-item1-resp {
+    width: 144px;
+    height: 208px;
+  }
+  .inspi-content .inspi-explore .inspi-list-reps #inspi-item2-resp {
+    width: 112px;
+    height: 188px;
+  }
+  .inspi-content .inspi-explore .inspi-list-reps #inspi-item3-resp {
+    width: 144px;
+    height: 208px;
   }
 }
 
