@@ -687,6 +687,91 @@ body {
     width: 100%;
   }
 }
+
+.footer-container {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  gap: 80px;
+  justify-content: center;
+  #footer-col-1 {
+    width: 249px;
+    #p-desc-1 {
+      margin-bottom: 16px;
+    }
+    #p-location {
+      margin-bottom: 16px;
+    }
+    #p-phone {
+      margin-bottom: 16px;
+    }
+
+    a {
+      width: fit-content;
+      color: #616161;
+      font-family: "Gilroy-Regular";
+    }
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    .footer-title {
+      font-family: "Gilroy-Bold";
+      font-size: 24px;
+      font-weight: 700;
+    }
+    p {
+      margin: 0;
+      margin-bottom: 16px;
+      img {
+        margin-right: 8px;
+      }
+    }
+
+    .p-desc {
+      font-family: "Gilroy-Regular";
+      color: #616161;
+      margin: 0;
+    }
+    a {
+      width: fit-content;
+      margin-bottom: 16px;
+      font-family: "Gilroy-Medium";
+      color: #616161;
+      text-decoration: none;
+      font-weight: 400;
+    }
+    .input-tab {
+      display: flex;
+      flex-direction: row;
+      input {
+        border-width: 0;
+        background-color: #f4f5f7;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 242px;
+        font-family: "Gilroy-Regular";
+        font-weight: 400;
+      }
+      img {
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+.footer-line {
+  hr {
+    width: 85%;
+    background-color: #d8d8d8;
+    border: 1px solid rgb(128, 128, 128);
+    border-color: #d8d8d8;
+  }
+}
 @media screen and (max-width: 992px) {
   .headercontent {
     width: 100%;
@@ -966,8 +1051,7 @@ body {
   .our-products {
     .product-list {
       .product-item {
-    
-        img{
+        img {
           width: 100%;
         }
         h5 {
@@ -984,6 +1068,22 @@ body {
           .sale-price {
             font-size: 16px;
           }
+        }
+      }
+    }
+  }
+
+  .footer-container {
+    .footer-col {
+      .footer-title {
+        font-size: 18px;
+      }
+      a {
+        font-size: 14px;
+      }
+      .input-tab {
+        input {
+          width: 120px;
         }
       }
     }
