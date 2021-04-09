@@ -767,6 +767,40 @@ body {
   background-color: #f4f5f7;
 }
 
+.show-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 44px;
+}
+
+.show-more .show-more-btn {
+  width: 245px;
+  background-color: #fff;
+  border: 1px solid #e89f71;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.show-more .show-more-btn p {
+  text-align: center;
+  font-family: "Gilroy-Medium";
+  margin: 0;
+  color: #e89f71;
+  font-weight: 600;
+}
+
+.show-more .show-more-btn:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 992px) {
   .headercontent {
     width: 100%;

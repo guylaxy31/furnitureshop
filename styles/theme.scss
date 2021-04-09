@@ -555,6 +555,32 @@ body {
   }
 }
 
+.show-more {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 44px;
+  .show-more-btn {
+    width: 245px;
+    background-color: #fff;
+    border: 1px solid #e89f71;
+    box-sizing: border-box;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    p {
+      text-align: center;
+      font-family: "Gilroy-Medium";
+      margin: 0;
+      color: #e89f71;
+      font-weight: 600;
+    }
+  }
+  .show-more-btn:hover {
+    cursor: pointer;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .headercontent {
     width: 100%;
