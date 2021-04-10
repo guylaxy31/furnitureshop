@@ -1,3 +1,6 @@
+Furniture Shop Web [Responsive + Animation]
+Front-End Dev.
+
 [Language & Syntax]
 Html + scss (pure)
 
