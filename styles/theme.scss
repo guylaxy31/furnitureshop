@@ -996,9 +996,19 @@ body {
   }
 }
 
+@media screen and (min-width: 600px) {
+  .drawer-menu > ul {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .leftbg {
     width: 0;
+  }
+  .status-gallery-view {
+    margin-bottom: 380px;
+    gap: 8px;
   }
   .headercontent {
     width: 100%;
@@ -1033,6 +1043,7 @@ body {
         width: 100%;
         padding-left: 0px;
         justify-content: flex-end;
+        margin-top: 8px;
       }
     }
     .imageslide {
@@ -1048,7 +1059,7 @@ body {
     }
 
     .left-right-btn {
-      margin-bottom: 332px;
+      margin-bottom: 120px;
       .left-right-arrow {
         justify-content: space-between;
       }

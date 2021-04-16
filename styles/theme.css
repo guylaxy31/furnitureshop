@@ -1323,9 +1323,19 @@ body {
   }
 }
 
+@media screen and (min-width: 600px) {
+  .drawer-menu > ul {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .leftbg {
     width: 0;
+  }
+  .status-gallery-view {
+    margin-bottom: 380px;
+    gap: 8px;
   }
   .headercontent {
     width: 100%;
@@ -1367,6 +1377,7 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    margin-top: 8px;
   }
   .headercontent .imageslide img {
     height: 50%;
@@ -1378,7 +1389,7 @@ body {
     display: none;
   }
   .headercontent .left-right-btn {
-    margin-bottom: 332px;
+    margin-bottom: 120px;
   }
   .headercontent .left-right-btn .left-right-arrow {
     -webkit-box-pack: justify;
